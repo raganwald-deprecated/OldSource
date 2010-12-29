@@ -1,0 +1,246 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<title>andand.rb</title>
+	<style type="text/css">
+/* Stylesheet generated from TextMate theme
+ *
+ * IDLE
+ * 
+ *
+ */
+
+/* Mostly to improve view within the TextMate HTML viewer */
+body {
+	margin: 0;
+	padding: 0;
+}
+
+pre.textmate-source {
+	margin: 0;
+	padding: 0 0 0 2px;
+	font-family: Monaco, monospace;
+	font-size: 11px;
+	line-height: 1.3em;
+	word-wrap: break-word;
+	white-space: pre;
+	white-space: pre-wrap;
+	white-space: -moz-pre-wrap;
+	white-space: -o-pre-wrap;
+}
+
+pre.textmate-source.idle {
+	color: #000000;
+	background-color: #FFFFFF;
+}
+
+pre.textmate-source .linenum {
+	width: 75px;
+	padding: 0.1em 1em 0.2em 0;
+	color: #888;
+	background-color: #eee;
+}
+pre.textmate-source.idle span {
+   padding-top: 0.2em;
+   padding-bottom: 0.1em;
+}
+pre.textmate-source.idle ::selection {
+	background-color: #BAD6FD;
+}
+/* Comment */
+pre.textmate-source.idle .comment {
+	color: #919191;
+}
+
+/* String */
+pre.textmate-source.idle .string {
+	color: #00A33F;
+}
+
+/* Number */
+pre.textmate-source.idle .constant_numeric {
+}
+
+/* Built-in constant */
+pre.textmate-source.idle .constant_language {
+	color: #A535AE;
+}
+
+/* User-defined constant */
+pre.textmate-source.idle .constant_character, pre.textmate-source.idle .constant_other {
+}
+
+/* Variable */
+pre.textmate-source.idle .variable_language, pre.textmate-source.idle .variable_other {
+}
+
+/* Keyword */
+pre.textmate-source.idle .keyword {
+	color: #FF5600;
+}
+
+/* Storage */
+pre.textmate-source.idle .storage {
+	color: #FF5600;
+}
+
+/* Type name */
+pre.textmate-source.idle .entity_name_type {
+	color: #21439C;
+}
+
+/* Inherited class */
+pre.textmate-source.idle .entity_other_inherited-class {
+}
+
+/* Function name */
+pre.textmate-source.idle .entity_name_function {
+	color: #21439C;
+}
+
+/* Function argument */
+pre.textmate-source.idle .variable_parameter {
+}
+
+/* Tag name */
+pre.textmate-source.idle .entity_name_tag {
+}
+
+/* Tag attribute */
+pre.textmate-source.idle .entity_other_attribute-name {
+}
+
+/* Library function */
+pre.textmate-source.idle .support_function {
+	color: #A535AE;
+}
+
+/* Library constant */
+pre.textmate-source.idle .support_constant {
+	color: #A535AE;
+}
+
+/* Library class/type */
+pre.textmate-source.idle .support_type, pre.textmate-source.idle .support_class {
+	color: #A535AE;
+}
+
+/* Library variable */
+pre.textmate-source.idle .support_variable {
+	color: #A535AE;
+}
+
+/* Invalid */
+pre.textmate-source.idle .invalid {
+	color: #FFFFFF;
+	background-color: #990000;
+}
+
+/* String interpolation */
+pre.textmate-source.idle .constant_other_placeholder_py {
+	color: #990000;
+}
+
+
+
+	</style>
+</head>
+
+<body><pre class="textmate-source idle"><span class="source source_ruby"><span class="comment comment_block comment_block_documentation comment_block_documentation_ruby"><span class="punctuation punctuation_definition punctuation_definition_comment punctuation_definition_comment_ruby">=begin</span>
+
+Copyright (c) 2008 Reginald Braithwaite
+<a href="http://weblog.raganwald.com/2008/01/objectandand-objectme-in-ruby.html" title="Object#andand & Object#me in Ruby">http://weblog.raganwald.com/2008/01/objectandand-objectme-in-ruby.html</a>
+
+Permission is hereby granted, free of charge, to any person
+obtaining a copy of this software and associated documentation
+files (the "Software"), to deal in the Software without
+restriction, including without limitation the rights to use,
+copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the
+Software is furnished to do so, subject to the following
+conditions:
+
+The above copyright notice and this permission notice shall be
+included in all copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND,
+EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES
+OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND
+NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT
+HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY,
+WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING
+FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR
+OTHER DEALINGS IN THE SOFTWARE.
+
+Some code adapted from Jim Weirich's post:
+http://onestepback.org/index.cgi/Tech/Ruby/BlankSlate.rdoc
+
+<span class="punctuation punctuation_definition punctuation_definition_comment punctuation_definition_comment_ruby">=end</span></span>
+
+<span class="meta meta_module meta_module_ruby"><span class="keyword keyword_control keyword_control_module keyword_control_module_ruby">module</span> <span class="entity entity_name entity_name_type entity_name_type_module entity_name_type_module_ruby">AndAnd</span></span>
+  
+<span class="meta meta_module meta_module_ruby">  <span class="keyword keyword_control keyword_control_module keyword_control_module_ruby">module</span> <span class="entity entity_name entity_name_type entity_name_type_module entity_name_type_module_ruby">ObjectGoodies</span></span>
+    
+    <span class="meta meta_function meta_function_method meta_function_method_with-arguments meta_function_method_with-arguments_ruby"><span class="keyword keyword_control keyword_control_def keyword_control_def_ruby">def</span> <span class="entity entity_name entity_name_function entity_name_function_ruby">andand</span> <span class="punctuation punctuation_definition punctuation_definition_parameters punctuation_definition_parameters_ruby">(</span><span class="variable variable_parameter variable_parameter_function variable_parameter_function_ruby">p <span class="keyword keyword_operator keyword_operator_assignment keyword_operator_assignment_ruby">=</span> <span class="constant constant_language constant_language_ruby">nil</span></span><span class="punctuation punctuation_definition punctuation_definition_parameters punctuation_definition_parameters_ruby">)</span></span>
+      <span class="keyword keyword_control keyword_control_ruby">if</span> <span class="variable variable_language variable_language_ruby">self</span>
+        <span class="keyword keyword_control keyword_control_ruby">if</span> <span class="keyword keyword_control keyword_control_pseudo-method keyword_control_pseudo-method_ruby">block_given?</span>
+          <span class="keyword keyword_control keyword_control_pseudo-method keyword_control_pseudo-method_ruby">yield</span><span class="punctuation punctuation_section punctuation_section_function punctuation_section_function_ruby">(</span><span class="variable variable_language variable_language_ruby">self</span><span class="punctuation punctuation_section punctuation_section_function punctuation_section_function_ruby">)</span>
+        <span class="keyword keyword_control keyword_control_ruby">elsif</span> p
+          p<span class="punctuation punctuation_separator punctuation_separator_method punctuation_separator_method_ruby">.</span>to_proc<span class="punctuation punctuation_separator punctuation_separator_method punctuation_separator_method_ruby">.</span>call<span class="punctuation punctuation_section punctuation_section_function punctuation_section_function_ruby">(</span><span class="variable variable_language variable_language_ruby">self</span><span class="punctuation punctuation_section punctuation_section_function punctuation_section_function_ruby">)</span>
+        <span class="keyword keyword_control keyword_control_ruby">else</span>
+          <span class="variable variable_language variable_language_ruby">self</span>
+        <span class="keyword keyword_control keyword_control_ruby">end</span>
+      <span class="keyword keyword_control keyword_control_ruby">else</span>
+        <span class="keyword keyword_control keyword_control_ruby">if</span> <span class="keyword keyword_control keyword_control_pseudo-method keyword_control_pseudo-method_ruby">block_given?</span> <span class="keyword keyword_operator keyword_operator_logical keyword_operator_logical_ruby">or</span> p
+          <span class="variable variable_language variable_language_ruby">self</span>
+        <span class="keyword keyword_control keyword_control_ruby">else</span>
+          <span class="support support_class support_class_ruby">MockReturningMe</span><span class="punctuation punctuation_separator punctuation_separator_method punctuation_separator_method_ruby">.</span><span class="keyword keyword_other keyword_other_special-method keyword_other_special-method_ruby">new</span><span class="punctuation punctuation_section punctuation_section_function punctuation_section_function_ruby">(</span><span class="variable variable_language variable_language_ruby">self</span><span class="punctuation punctuation_section punctuation_section_function punctuation_section_function_ruby">)</span>
+        <span class="keyword keyword_control keyword_control_ruby">end</span>
+      <span class="keyword keyword_control keyword_control_ruby">end</span> 
+    <span class="keyword keyword_control keyword_control_ruby">end</span>
+    
+    <span class="meta meta_function meta_function_method meta_function_method_with-arguments meta_function_method_with-arguments_ruby"><span class="keyword keyword_control keyword_control_def keyword_control_def_ruby">def</span> <span class="entity entity_name entity_name_function entity_name_function_ruby">me</span> <span class="punctuation punctuation_definition punctuation_definition_parameters punctuation_definition_parameters_ruby">(</span><span class="variable variable_parameter variable_parameter_function variable_parameter_function_ruby">p <span class="keyword keyword_operator keyword_operator_assignment keyword_operator_assignment_ruby">=</span> <span class="constant constant_language constant_language_ruby">nil</span></span><span class="punctuation punctuation_definition punctuation_definition_parameters punctuation_definition_parameters_ruby">)</span></span>
+      <span class="keyword keyword_control keyword_control_ruby">if</span> <span class="keyword keyword_control keyword_control_pseudo-method keyword_control_pseudo-method_ruby">block_given?</span>
+        <span class="keyword keyword_control keyword_control_pseudo-method keyword_control_pseudo-method_ruby">yield</span><span class="punctuation punctuation_section punctuation_section_function punctuation_section_function_ruby">(</span><span class="variable variable_language variable_language_ruby">self</span><span class="punctuation punctuation_section punctuation_section_function punctuation_section_function_ruby">)</span>
+        <span class="variable variable_language variable_language_ruby">self</span>
+      <span class="keyword keyword_control keyword_control_ruby">elsif</span> p
+        p<span class="punctuation punctuation_separator punctuation_separator_method punctuation_separator_method_ruby">.</span>to_proc<span class="punctuation punctuation_separator punctuation_separator_method punctuation_separator_method_ruby">.</span>call<span class="punctuation punctuation_section punctuation_section_function punctuation_section_function_ruby">(</span><span class="variable variable_language variable_language_ruby">self</span><span class="punctuation punctuation_section punctuation_section_function punctuation_section_function_ruby">)</span>
+        <span class="variable variable_language variable_language_ruby">self</span>
+      <span class="keyword keyword_control keyword_control_ruby">else</span>
+        <span class="support support_class support_class_ruby">ProxyReturningMe</span><span class="punctuation punctuation_separator punctuation_separator_method punctuation_separator_method_ruby">.</span><span class="keyword keyword_other keyword_other_special-method keyword_other_special-method_ruby">new</span><span class="punctuation punctuation_section punctuation_section_function punctuation_section_function_ruby">(</span><span class="variable variable_language variable_language_ruby">self</span><span class="punctuation punctuation_section punctuation_section_function punctuation_section_function_ruby">)</span>
+      <span class="keyword keyword_control keyword_control_ruby">end</span>
+    <span class="keyword keyword_control keyword_control_ruby">end</span>
+    
+  <span class="keyword keyword_control keyword_control_ruby">end</span>
+  
+<span class="keyword keyword_control keyword_control_ruby">end</span>
+
+<span class="meta meta_class meta_class_ruby"><span class="keyword keyword_control keyword_control_class keyword_control_class_ruby">class</span> <span class="entity entity_name entity_name_type entity_name_type_class entity_name_type_class_ruby">Object</span></span>
+  <span class="keyword keyword_other keyword_other_special-method keyword_other_special-method_ruby">include</span> <span class="support support_class support_class_ruby">AndAnd</span><span class="punctuation punctuation_separator punctuation_separator_other punctuation_separator_other_ruby">::</span><span class="variable variable_other variable_other_constant variable_other_constant_ruby">ObjectGoodies</span>
+<span class="keyword keyword_control keyword_control_ruby">end</span>
+
+<span class="meta meta_module meta_module_ruby"><span class="keyword keyword_control keyword_control_module keyword_control_module_ruby">module</span> <span class="entity entity_name entity_name_type entity_name_type_module entity_name_type_module_ruby">AndAnd</span></span>
+  
+<span class="meta meta_class meta_class_ruby">  <span class="keyword keyword_control keyword_control_class keyword_control_class_ruby">class</span> <span class="entity entity_name entity_name_type entity_name_type_class entity_name_type_class_ruby">BlankSlate</span></span>
+    instance_methods<span class="punctuation punctuation_separator punctuation_separator_method punctuation_separator_method_ruby">.</span>reject <span class="punctuation punctuation_section punctuation_section_scope punctuation_section_scope_ruby">{</span><span class="meta meta_syntax meta_syntax_ruby meta_syntax_ruby_start-block"> </span><span class="punctuation punctuation_separator punctuation_separator_variable punctuation_separator_variable_ruby">|</span><span class="variable variable_other variable_other_block variable_other_block_ruby">m</span><span class="punctuation punctuation_separator punctuation_separator_variable punctuation_separator_variable_ruby">|</span> m <span class="keyword keyword_operator keyword_operator_comparison keyword_operator_comparison_ruby">=~</span> <span class="string string_regexp string_regexp_classic string_regexp_classic_ruby"><span class="punctuation punctuation_definition punctuation_definition_string punctuation_definition_string_ruby">/</span>^__<span class="punctuation punctuation_definition punctuation_definition_string punctuation_definition_string_ruby">/</span></span> <span class="punctuation punctuation_section punctuation_section_scope punctuation_section_scope_ruby">}</span><span class="punctuation punctuation_separator punctuation_separator_method punctuation_separator_method_ruby">.</span>each <span class="punctuation punctuation_section punctuation_section_scope punctuation_section_scope_ruby">{</span><span class="meta meta_syntax meta_syntax_ruby meta_syntax_ruby_start-block"> </span><span class="punctuation punctuation_separator punctuation_separator_variable punctuation_separator_variable_ruby">|</span><span class="variable variable_other variable_other_block variable_other_block_ruby">m</span><span class="punctuation punctuation_separator punctuation_separator_variable punctuation_separator_variable_ruby">|</span> undef_method m <span class="punctuation punctuation_section punctuation_section_scope punctuation_section_scope_ruby">}</span>
+    <span class="meta meta_function meta_function_method meta_function_method_with-arguments meta_function_method_with-arguments_ruby"><span class="keyword keyword_control keyword_control_def keyword_control_def_ruby">def</span> <span class="entity entity_name entity_name_function entity_name_function_ruby">initialize</span><span class="punctuation punctuation_definition punctuation_definition_parameters punctuation_definition_parameters_ruby">(</span><span class="variable variable_parameter variable_parameter_function variable_parameter_function_ruby">me</span><span class="punctuation punctuation_definition punctuation_definition_parameters punctuation_definition_parameters_ruby">)</span></span>
+      <span class="variable variable_other variable_other_readwrite variable_other_readwrite_instance variable_other_readwrite_instance_ruby"><span class="punctuation punctuation_definition punctuation_definition_variable punctuation_definition_variable_ruby">@</span>me</span> <span class="keyword keyword_operator keyword_operator_assignment keyword_operator_assignment_ruby">=</span> me
+    <span class="keyword keyword_control keyword_control_ruby">end</span>
+  <span class="keyword keyword_control keyword_control_ruby">end</span>
+  
+<span class="meta meta_class meta_class_ruby">  <span class="keyword keyword_control keyword_control_class keyword_control_class_ruby">class</span> <span class="entity entity_name entity_name_type entity_name_type_class entity_name_type_class_ruby">MockReturningMe<span class="entity entity_other entity_other_inherited-class entity_other_inherited-class_ruby"> <span class="punctuation punctuation_separator punctuation_separator_inheritance punctuation_separator_inheritance_ruby">&lt;</span> BlankSlate</span></span></span>
+    <span class="meta meta_function meta_function_method meta_function_method_with-arguments meta_function_method_with-arguments_ruby"><span class="keyword keyword_control keyword_control_def keyword_control_def_ruby">def</span> <span class="entity entity_name entity_name_function entity_name_function_ruby">method_missing</span><span class="punctuation punctuation_definition punctuation_definition_parameters punctuation_definition_parameters_ruby">(</span><span class="variable variable_parameter variable_parameter_function variable_parameter_function_ruby"><span class="keyword keyword_operator keyword_operator_arithmetic keyword_operator_arithmetic_ruby">*</span>args</span><span class="punctuation punctuation_definition punctuation_definition_parameters punctuation_definition_parameters_ruby">)</span></span>
+      <span class="variable variable_other variable_other_readwrite variable_other_readwrite_instance variable_other_readwrite_instance_ruby"><span class="punctuation punctuation_definition punctuation_definition_variable punctuation_definition_variable_ruby">@</span>me</span>
+    <span class="keyword keyword_control keyword_control_ruby">end</span>
+  <span class="keyword keyword_control keyword_control_ruby">end</span>
+  
+<span class="meta meta_class meta_class_ruby">  <span class="keyword keyword_control keyword_control_class keyword_control_class_ruby">class</span> <span class="entity entity_name entity_name_type entity_name_type_class entity_name_type_class_ruby">ProxyReturningMe<span class="entity entity_other entity_other_inherited-class entity_other_inherited-class_ruby"> <span class="punctuation punctuation_separator punctuation_separator_inheritance punctuation_separator_inheritance_ruby">&lt;</span> BlankSlate</span></span></span>
+    <span class="meta meta_function meta_function_method meta_function_method_with-arguments meta_function_method_with-arguments_ruby"><span class="keyword keyword_control keyword_control_def keyword_control_def_ruby">def</span> <span class="entity entity_name entity_name_function entity_name_function_ruby">method_missing</span><span class="punctuation punctuation_definition punctuation_definition_parameters punctuation_definition_parameters_ruby">(</span><span class="variable variable_parameter variable_parameter_function variable_parameter_function_ruby">sym<span class="punctuation punctuation_separator punctuation_separator_object punctuation_separator_object_ruby">,</span> <span class="keyword keyword_operator keyword_operator_arithmetic keyword_operator_arithmetic_ruby">*</span>args<span class="punctuation punctuation_separator punctuation_separator_object punctuation_separator_object_ruby">,</span> <span class="keyword keyword_operator keyword_operator_arithmetic keyword_operator_arithmetic_ruby">&amp;</span>block</span><span class="punctuation punctuation_definition punctuation_definition_parameters punctuation_definition_parameters_ruby">)</span></span>
+      <span class="variable variable_other variable_other_readwrite variable_other_readwrite_instance variable_other_readwrite_instance_ruby"><span class="punctuation punctuation_definition punctuation_definition_variable punctuation_definition_variable_ruby">@</span>me</span><span class="punctuation punctuation_separator punctuation_separator_method punctuation_separator_method_ruby">.</span>__send__<span class="punctuation punctuation_section punctuation_section_function punctuation_section_function_ruby">(</span>sym<span class="punctuation punctuation_separator punctuation_separator_object punctuation_separator_object_ruby">,</span> <span class="keyword keyword_operator keyword_operator_arithmetic keyword_operator_arithmetic_ruby">*</span>args<span class="punctuation punctuation_separator punctuation_separator_object punctuation_separator_object_ruby">,</span> <span class="keyword keyword_operator keyword_operator_arithmetic keyword_operator_arithmetic_ruby">&amp;</span>block<span class="punctuation punctuation_section punctuation_section_function punctuation_section_function_ruby">)</span>
+      <span class="variable variable_other variable_other_readwrite variable_other_readwrite_instance variable_other_readwrite_instance_ruby"><span class="punctuation punctuation_definition punctuation_definition_variable punctuation_definition_variable_ruby">@</span>me</span>
+    <span class="keyword keyword_control keyword_control_ruby">end</span>
+  <span class="keyword keyword_control keyword_control_ruby">end</span>
+  
+<span class="keyword keyword_control keyword_control_ruby">end</span></span></pre>
+</body>
+</html>
