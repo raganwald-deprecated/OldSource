@@ -12,7 +12,7 @@ I'm not going to describe the math puzzle, but lately I've been asking candidate
 <TABLE WIDTH=100% BORDER=1 CELLPADDING=2 CELLSPACING=2>
 	<TR VALIGN=TOP>
 		<TD>
-			<A HREF="source/rocks.java">rocks.java</A>
+			<A HREF="https://github.com/raganwald/OldSource/tree/master/source/rocks.java">rocks.java</A>
 		</TD>
 		<TD>
 			Brute force answer checking in Java.
@@ -20,7 +20,7 @@ I'm not going to describe the math puzzle, but lately I've been asking candidate
 	</TR>
 	<TR VALIGN=TOP>
 		<TD>
-			<A HREF="source/rocks.groovy.txt">rocks.groovy</A>
+			<A HREF="https://github.com/raganwald/OldSource/tree/master/source/rocks.groovy.txt">rocks.groovy</A>
 		</TD>
 		<TD>
 			A much better algorithm, this time in the <a href="http://groovy.codehaus.org/">Groovy</a>
@@ -42,7 +42,7 @@ For more information on this subject, try doing a web search for &quot;<a href="
 <TABLE WIDTH=100% BORDER=1 CELLPADDING=2 CELLSPACING=2>
 	<TR VALIGN=TOP>
 		<TD>
-			<A HREF="source/magicbook/TestDomainEvents.java">TestDomainEvents.java</A>
+			<A HREF="https://github.com/raganwald/OldSource/tree/master/source/magicbook/TestDomainEvents.java">TestDomainEvents.java</A>
 		</TD>
 		<TD>
 			Preliminary HttpUnit tests for Domain Events.
@@ -50,7 +50,7 @@ For more information on this subject, try doing a web search for &quot;<a href="
 	</TR>
 	<TR VALIGN=TOP>
 		<TD>
-			<A HREF="source/magicbook/DomainEventCommand.java">DomainEventCommand.java</A>
+			<A HREF="https://github.com/raganwald/OldSource/tree/master/source/magicbook/DomainEventCommand.java">DomainEventCommand.java</A>
 		</TD>
 		<TD>
 			&quot;Commands&quot; are like little servlets that live inside the UI and perform actions, something
@@ -60,7 +60,7 @@ For more information on this subject, try doing a web search for &quot;<a href="
 	</TR>
 	<TR VALIGN=TOP>
 		<TD>
-			<A HREF="source/magicbook/DomainEventFactory.java">DomainEventFactory.java</A>
+			<A HREF="https://github.com/raganwald/OldSource/tree/master/source/magicbook/DomainEventFactory.java">DomainEventFactory.java</A>
 		</TD>
 		<TD>
 			A preliminary factory that builds Domain Events and uses reflection to populate them. There is some
@@ -69,8 +69,8 @@ For more information on this subject, try doing a web search for &quot;<a href="
 	</TR>
 	<TR VALIGN=TOP>
 		<TD>
-			<A HREF="source/magicbook/TDomainEvent.java">TDomainEvent.java</A><BR>
-			   <A HREF="source/magicbook/TAbout.java">TAbout.java</A>
+			<A HREF="https://github.com/raganwald/OldSource/tree/master/source/magicbook/TDomainEvent.java">TDomainEvent.java</A><BR>
+			   <A HREF="https://github.com/raganwald/OldSource/tree/master/source/magicbook/TAbout.java">TAbout.java</A>
 		</TD>
 		<TD>
 			Some handy interfaces. TAbouts are used for answering whether operations are allowed,
@@ -94,7 +94,7 @@ The basis for the transformation is that the Java byte codes are parsed and mech
 <TABLE WIDTH=100% BORDER=1 CELLPADDING=2 CELLSPACING=2>
 	<TR VALIGN=TOP>
 		<TD>
-			<A HREF="source/worseisbetter/LetCallExpander.java">LetCallExpander.java</A>
+			<A HREF="https://github.com/raganwald/OldSource/tree/master/source/worseisbetter/LetCallExpander.java">LetCallExpander.java</A>
 		</TD>
 		<TD>
 			Certain patterns in the AST are rewritten to simplify optimization and transformation.
@@ -107,7 +107,7 @@ The basis for the transformation is that the Java byte codes are parsed and mech
 	</TR>
 	<TR VALIGN=TOP>
 		<TD>
-			<A HREF="source/worseisbetter/CallExpander.java">CallExpander.java</A>
+			<A HREF="https://github.com/raganwald/OldSource/tree/master/source/worseisbetter/CallExpander.java">CallExpander.java</A>
 		</TD>
 		<TD>
 			The inverse of let/call/cc is a call statement. This is where one piece of code invokes a named
@@ -118,7 +118,7 @@ The basis for the transformation is that the Java byte codes are parsed and mech
 	</TR>
 	<TR VALIGN=TOP>
 		<TD>
-			<A HREF="source/worseisbetter/YieldExpander.java">YieldExpander.java</A>
+			<A HREF="https://github.com/raganwald/OldSource/tree/master/source/worseisbetter/YieldExpander.java">YieldExpander.java</A>
 		</TD>
 		<TD>
 			The yield special form actually transfers execution to the named continuation. It is also
@@ -127,9 +127,9 @@ The basis for the transformation is that the Java byte codes are parsed and mech
 	</TR>
 	<TR VALIGN=TOP>
 		<TD>
-			<A HREF="source/worseisbetter/SetBangBeginFlattener.java">SetBangBeginFlattener.java</A><BR>
-			   <A HREF="source/worseisbetter/IfFlattener.java">IfFlattener.java</A>
-			   <A HREF="source/worseisbetter/CompositeEntryFlattener.java">CompositeEntryFlattener.java</A>
+			<A HREF="https://github.com/raganwald/OldSource/tree/master/source/worseisbetter/SetBangBeginFlattener.java">SetBangBeginFlattener.java</A><BR>
+			   <A HREF="https://github.com/raganwald/OldSource/tree/master/source/worseisbetter/IfFlattener.java">IfFlattener.java</A>
+			   <A HREF="https://github.com/raganwald/OldSource/tree/master/source/worseisbetter/CompositeEntryFlattener.java">CompositeEntryFlattener.java</A>
 		</TD>
 		<TD>
 			Lots of language constructs add scope to the AST. Flatteners rewrite the code using GOTOs so that it has a single
@@ -147,7 +147,7 @@ When working with large Struts development projects, managing changes to the str
 	<COL WIDTH=232*>
 	<TR VALIGN=TOP>
 		<TD>
-			<A HREF="source/actions.xsl">actions.xsl</A>
+			<A HREF="https://github.com/raganwald/OldSource/tree/master/source/actions.xsl">actions.xsl</A>
 		</TD>
 		<TD>
 			In conjunction with a build step that applies this XSL sheet to the struts-config.xml file,
@@ -161,8 +161,8 @@ When working with large Struts development projects, managing changes to the str
 	</TR>
 	<TR VALIGN=TOP>
 		<TD>
-			<A HREF="source/delegate-interfaces.xsl">delegate-interfaces.xsl</A><BR/>
-			<A HREF="source/default-delegate.xsl">default-delegate.xsl</A>
+			<A HREF="https://github.com/raganwald/OldSource/tree/master/source/delegate-interfaces.xsl">delegate-interfaces.xsl</A><BR/>
+			<A HREF="https://github.com/raganwald/OldSource/tree/master/source/default-delegate.xsl">default-delegate.xsl</A>
 		</TD>
 		<TD>
 			Custom attributes in the struts-config file identify the business logic delegate that is to
@@ -176,8 +176,8 @@ When working with large Struts development projects, managing changes to the str
 	</TR>
 	<TR VALIGN=TOP>
 		<TD>
-			<A HREF="source/IEntityDelegate.java">IEntityDelegate.java</A><BR/>
-			<A HREF="source/ActionEntityDetailsGeneralTab.java">ActionEntityDetailsGeneralTab.java</A>
+			<A HREF="https://github.com/raganwald/OldSource/tree/master/source/IEntityDelegate.java">IEntityDelegate.java</A><BR/>
+			<A HREF="https://github.com/raganwald/OldSource/tree/master/source/ActionEntityDetailsGeneralTab.java">ActionEntityDetailsGeneralTab.java</A>
 		</TD>
 		<TD>
 			Sample files generated automatically.
@@ -195,7 +195,7 @@ I experimented with the Ruby programming language. While it doesn&#146;t have th
 	<COL WIDTH=232*>
 	<TR VALIGN=TOP>
 		<TD WIDTH=9%>
-			<A HREF="source/denumerable.txt">denumerable</A>
+			<A HREF="https://github.com/raganwald/OldSource/tree/master/source/denumerable.txt">denumerable</A>
 		</TD>
 		<TD WIDTH=91%>
 			A module for call-by-need collections. Useful for modelling
@@ -223,7 +223,7 @@ The architecture was loosely MVC. The PHP pages accessible from the admin page w
 	<COL WIDTH=210*>
 	<TR VALIGN=TOP>
 		<TD WIDTH=18%>
-			<A HREF="source/private/admin/index.html.txt">/private/admin/index.html</A>
+			<A HREF="https://github.com/raganwald/OldSource/tree/master/source/private/admin/index.html.txt">/private/admin/index.html</A>
 		</TD>
 		<TD WIDTH=82%>
 			The administration page. This is the page I used to manage the
@@ -233,7 +233,7 @@ The architecture was loosely MVC. The PHP pages accessible from the admin page w
 	</TR>
 	<TR VALIGN=TOP>
 		<TD WIDTH=18%>
-			<A HREF="source/private/admin/resetdb.php.txt">/private/admin/resetdb.php</A>
+			<A HREF="https://github.com/raganwald/OldSource/tree/master/source/private/admin/resetdb.php.txt">/private/admin/resetdb.php</A>
 		</TD>
 		<TD WIDTH=82%>
 			Oh no!
@@ -241,7 +241,7 @@ The architecture was loosely MVC. The PHP pages accessible from the admin page w
 	</TR>
 	<TR VALIGN=TOP>
 		<TD WIDTH=18%>
-			<A HREF="source/private/upload-image/sports.php.txt">/private/upload-image/sports.php<BR></A><A HREF="source/private/upload-image/filmfest.php.txt">/private/upload-image/filmfest.php</A>
+			<A HREF="https://github.com/raganwald/OldSource/tree/master/source/private/upload-image/sports.php.txt">/private/upload-image/sports.php<BR></A><A HREF="https://github.com/raganwald/OldSource/tree/master/source/private/upload-image/filmfest.php.txt">/private/upload-image/filmfest.php</A>
 		</TD>
 		<TD WIDTH=82%>
 			The site was divided into two main &#147;databases,&#148; one
@@ -253,7 +253,7 @@ The architecture was loosely MVC. The PHP pages accessible from the admin page w
 	</TR>
 	<TR VALIGN=TOP>
 		<TD WIDTH=18%>
-			<A HREF="source/private/grind/grind.php.txt">/private/grind/grind.php</A>
+			<A HREF="https://github.com/raganwald/OldSource/tree/master/source/private/grind/grind.php.txt">/private/grind/grind.php</A>
 		</TD>
 		<TD WIDTH=82%>
 			On a daily basis, you could &#147;grind&#148; the database out
@@ -268,7 +268,7 @@ The architecture was loosely MVC. The PHP pages accessible from the admin page w
 	</TR>
 	<TR VALIGN=TOP>
 		<TD WIDTH=18%>
-			<A HREF="source/private/xml/mirror.xml.txt">/private/xml/mirror.xml</A>
+			<A HREF="https://github.com/raganwald/OldSource/tree/master/source/private/xml/mirror.xml.txt">/private/xml/mirror.xml</A>
 		</TD>
 		<TD WIDTH=82%>
 			The structure of the production site was defined in this XML
@@ -277,13 +277,13 @@ The architecture was loosely MVC. The PHP pages accessible from the admin page w
 	</TR>
 	<TR VALIGN=TOP>
 		<TD WIDTH=18%>
-			<A HREF="source/private/grind/mirror.php.txt">/private/grind/mirror.php</A>
+			<A HREF="https://github.com/raganwald/OldSource/tree/master/source/private/grind/mirror.php.txt">/private/grind/mirror.php</A>
 		</TD>
 		<TD WIDTH=82%>
 			When you were satisfied with the static site, you would
 			&#147;mirror&#148; it to the production site using FTP. This was
 			very loosely M/VC: The work was done by
-			<A HREF="source/private/grind/mirror-action.php.txt">/private/grind/mirror-action.php</A>.
+			<A HREF="https://github.com/raganwald/OldSource/tree/master/source/private/grind/mirror-action.php.txt">/private/grind/mirror-action.php</A>.
 		</TD>
 	</TR>
 	<TR VALIGN=TOP>
@@ -291,9 +291,9 @@ The architecture was loosely MVC. The PHP pages accessible from the admin page w
 			The PHP files that handled uploading images:
 		</TD>
 		<TD WIDTH=82%>
-			<A HREF="source/private/upload-image/upload-action.php.txt">/private/upload-image/upload-action.php</A>,
-			<A HREF="source/private/upload-image/sports.php.txt">/private/upload-image/sports.php</A>,
-			<A HREF="source/private/upload-image/filmfest.php.txt">/private/upload-image/filmfest.php</A>
+			<A HREF="https://github.com/raganwald/OldSource/tree/master/source/private/upload-image/upload-action.php.txt">/private/upload-image/upload-action.php</A>,
+			<A HREF="https://github.com/raganwald/OldSource/tree/master/source/private/upload-image/sports.php.txt">/private/upload-image/sports.php</A>,
+			<A HREF="https://github.com/raganwald/OldSource/tree/master/source/private/upload-image/filmfest.php.txt">/private/upload-image/filmfest.php</A>
 		</TD>
 	</TR>
 	<TR VALIGN=TOP>
@@ -301,19 +301,19 @@ The architecture was loosely MVC. The PHP pages accessible from the admin page w
 			The include files for the site:
 		</TD>
 		<TD WIDTH=82%>
-			<A HREF="source/private/required/admin.php.txt">/private/required/admin.php</A>,
-			<A HREF="source/private/required/blackboard-protocol.php.txt">/private/required/blackboard-protocol.php</A>,
-			<A HREF="source/private/required/blackboard.php.txt">/private/required/blackboard.php</A><BR><A HREF="source/private/required/class.php.txt">/private/required/class.php</A>,
-			<A HREF="source/private/required/error.php.txt">/private/required/error.php</A>,
-			<A HREF="source/private/required/image-schema.php.txt">/private/required/image-schema.php</A><BR><A HREF="source/private/required/simplify.php.txt">/private/required/simplify.php</A>,
-			<A HREF="source/private/required/sql.php.txt">/private/required/sql.php</A>,
-			<A HREF="source/private/required/table-schema.php.txt">/private/required/table-schema.php</A><BR><A HREF="source/private/required/TAbstractRootPage.php.txt">/private/required/TAbstractRootPage.php</A>,
-			<A HREF="source/private/required/TContext.php.txt">/private/required/TContext.php</A>,
-			<A HREF="source/private/required/thumbnails.php.txt">/private/required/thumbnails.php</A><BR><A HREF="source/private/required/TMirrorGrinder.php.txt">/private/required/TMirrorGrinder.php</A>,
-			<A HREF="source/private/required/types.php.txt">/private/required/types.php</A>,
-			<A HREF="source/private/required/upload.php.txt">/private/required/upload.php</A><BR><A HREF="source/private/required/wiregrinder.php.txt">/private/required/wiregrinder.php</A>,
-			<A HREF="source/private/required/wireshooter.php.txt">/private/required/wireshooter.php</A>,
-			<A HREF="source/private/required/wiretemplates.php.txt">/private/required/wiretemplates.php</A>
+			<A HREF="https://github.com/raganwald/OldSource/tree/master/source/private/required/admin.php.txt">/private/required/admin.php</A>,
+			<A HREF="https://github.com/raganwald/OldSource/tree/master/source/private/required/blackboard-protocol.php.txt">/private/required/blackboard-protocol.php</A>,
+			<A HREF="https://github.com/raganwald/OldSource/tree/master/source/private/required/blackboard.php.txt">/private/required/blackboard.php</A><BR><A HREF="https://github.com/raganwald/OldSource/tree/master/source/private/required/class.php.txt">/private/required/class.php</A>,
+			<A HREF="https://github.com/raganwald/OldSource/tree/master/source/private/required/error.php.txt">/private/required/error.php</A>,
+			<A HREF="https://github.com/raganwald/OldSource/tree/master/source/private/required/image-schema.php.txt">/private/required/image-schema.php</A><BR><A HREF="https://github.com/raganwald/OldSource/tree/master/source/private/required/simplify.php.txt">/private/required/simplify.php</A>,
+			<A HREF="https://github.com/raganwald/OldSource/tree/master/source/private/required/sql.php.txt">/private/required/sql.php</A>,
+			<A HREF="https://github.com/raganwald/OldSource/tree/master/source/private/required/table-schema.php.txt">/private/required/table-schema.php</A><BR><A HREF="https://github.com/raganwald/OldSource/tree/master/source/private/required/TAbstractRootPage.php.txt">/private/required/TAbstractRootPage.php</A>,
+			<A HREF="https://github.com/raganwald/OldSource/tree/master/source/private/required/TContext.php.txt">/private/required/TContext.php</A>,
+			<A HREF="https://github.com/raganwald/OldSource/tree/master/source/private/required/thumbnails.php.txt">/private/required/thumbnails.php</A><BR><A HREF="https://github.com/raganwald/OldSource/tree/master/source/private/required/TMirrorGrinder.php.txt">/private/required/TMirrorGrinder.php</A>,
+			<A HREF="https://github.com/raganwald/OldSource/tree/master/source/private/required/types.php.txt">/private/required/types.php</A>,
+			<A HREF="https://github.com/raganwald/OldSource/tree/master/source/private/required/upload.php.txt">/private/required/upload.php</A><BR><A HREF="https://github.com/raganwald/OldSource/tree/master/source/private/required/wiregrinder.php.txt">/private/required/wiregrinder.php</A>,
+			<A HREF="https://github.com/raganwald/OldSource/tree/master/source/private/required/wireshooter.php.txt">/private/required/wireshooter.php</A>,
+			<A HREF="https://github.com/raganwald/OldSource/tree/master/source/private/required/wiretemplates.php.txt">/private/required/wiretemplates.php</A>
 		</TD>
 	</TR>
 </TABLE>
@@ -345,7 +345,7 @@ On a large and very successful software tool, we needed a wizard for configuring
 	<COL WIDTH=213*>
 	<TR VALIGN=TOP>
 		<TD>
-			<A HREF="source/wizard.mc.txt">wizard.mc.txt</A>
+			<A HREF="https://github.com/raganwald/OldSource/tree/master/source/wizard.mc.txt">wizard.mc.txt</A>
 		</TD>
 		<TD>
 			Excerpts of the MetaCard script for the Configuration Wizard.
@@ -362,7 +362,7 @@ These are some of the C++ general purpose classes in my 'toolbox'. There's a hea
 	<COL WIDTH=213*>
 	<TR VALIGN=TOP>
 		<TD WIDTH=17%>
-			<A HREF="source/StrictPointerT.h">StrictPointerT.h</A>
+			<A HREF="https://github.com/raganwald/OldSource/tree/master/source/StrictPointerT.h">StrictPointerT.h</A>
 		</TD>
 		<TD WIDTH=83%>
 			A template for enforcing strict single ownership of C++
@@ -372,7 +372,7 @@ These are some of the C++ general purpose classes in my 'toolbox'. There's a hea
 	</TR>
 	<TR VALIGN=TOP>
 		<TD WIDTH=17%>
-			<A HREF="source/AutoArrayT.h">AutoArrayT.h</A>
+			<A HREF="https://github.com/raganwald/OldSource/tree/master/source/AutoArrayT.h">AutoArrayT.h</A>
 		</TD>
 		<TD WIDTH=83%>
 			A version of <B>auto_ptr</B> designed for arrays.
@@ -380,7 +380,7 @@ These are some of the C++ general purpose classes in my 'toolbox'. There's a hea
 	</TR>
 	<TR VALIGN=TOP>
 		<TD WIDTH=17%>
-			<A HREF="source/DoubleHashTableT.h">DoubleHashTableT.h</A>
+			<A HREF="https://github.com/raganwald/OldSource/tree/master/source/DoubleHashTableT.h">DoubleHashTableT.h</A>
 		</TD>
 		<TD WIDTH=83%>
 			A template for making hash tables out of objects with two keys.
@@ -388,8 +388,8 @@ These are some of the C++ general purpose classes in my 'toolbox'. There's a hea
 	</TR>
 	<TR VALIGN=TOP>
 		<TD WIDTH=17%>
-			<A HREF="source/AbstractDoubleHashTable.h">AbstractDoubleHashTable.h</A>
-			<BR><A HREF="source/AbstractDoubleHashTable.cpp">AbstractDoubleHashTable.cpp</A>
+			<A HREF="https://github.com/raganwald/OldSource/tree/master/source/AbstractDoubleHashTable.h">AbstractDoubleHashTable.h</A>
+			<BR><A HREF="https://github.com/raganwald/OldSource/tree/master/source/AbstractDoubleHashTable.cpp">AbstractDoubleHashTable.cpp</A>
 		</TD>
 		<TD WIDTH=83%>
 			The superclass for DoubleHashTables.
@@ -397,8 +397,8 @@ These are some of the C++ general purpose classes in my 'toolbox'. There's a hea
 	</TR>
 	<TR VALIGN=TOP>
 		<TD WIDTH=17%>
-			<A HREF="source/DoubleHashable.h">DoubleHashable.h</A>
-			<BR><A HREF="source/DoubleHashable.cpp">DoubleHashable.cpp</A>
+			<A HREF="https://github.com/raganwald/OldSource/tree/master/source/DoubleHashable.h">DoubleHashable.h</A>
+			<BR><A HREF="https://github.com/raganwald/OldSource/tree/master/source/DoubleHashable.cpp">DoubleHashable.cpp</A>
 		</TD>
 		<TD WIDTH=83%>
 			A mixin for objects to be placed in <B>DoubleHashTables</B>.
@@ -406,8 +406,8 @@ These are some of the C++ general purpose classes in my 'toolbox'. There's a hea
 	</TR>
 	<TR VALIGN=TOP>
 		<TD WIDTH=17%>
-			<A HREF="source/Hashable.h">Hashable.h</A>
-			<BR><A HREF="source/Hashable.cpp">Hashable.cpp</A>
+			<A HREF="https://github.com/raganwald/OldSource/tree/master/source/Hashable.h">Hashable.h</A>
+			<BR><A HREF="https://github.com/raganwald/OldSource/tree/master/source/Hashable.cpp">Hashable.cpp</A>
 		</TD>
 		<TD WIDTH=83%>
 			Mixin for objects to be placed in hash tables. I've got other
@@ -417,8 +417,8 @@ These are some of the C++ general purpose classes in my 'toolbox'. There's a hea
 	</TR>
 	<TR VALIGN=TOP>
 		<TD WIDTH=17%>
-			<A HREF="source/PrimaryAdapterT.h">PrimaryAdapterT.h</A>
-			<BR><A HREF="source/PrimaryKeyAdapterT.h">PrimaryKeyAdapterT.h</A>
+			<A HREF="https://github.com/raganwald/OldSource/tree/master/source/PrimaryAdapterT.h">PrimaryAdapterT.h</A>
+			<BR><A HREF="https://github.com/raganwald/OldSource/tree/master/source/PrimaryKeyAdapterT.h">PrimaryKeyAdapterT.h</A>
 		</TD>
 		<TD WIDTH=83%>
 			Adapters which can take any object and manage it as a
@@ -427,8 +427,8 @@ These are some of the C++ general purpose classes in my 'toolbox'. There's a hea
 	</TR>
 	<TR VALIGN=TOP>
 		<TD WIDTH=17%>
-			<A HREF="source/HashUtil.h">HashUtil.h</A>
-			<BR><A HREF="source/HashUtil.cpp">HashUtil.cpp</A>
+			<A HREF="https://github.com/raganwald/OldSource/tree/master/source/HashUtil.h">HashUtil.h</A>
+			<BR><A HREF="https://github.com/raganwald/OldSource/tree/master/source/HashUtil.cpp">HashUtil.cpp</A>
 		</TD>
 		<TD WIDTH=83%>
 			Utility class implementing a string to hash code operation.
@@ -436,9 +436,9 @@ These are some of the C++ general purpose classes in my 'toolbox'. There's a hea
 	</TR>
 	<TR VALIGN=TOP>
 		<TD WIDTH=17%>
-			<A HREF="source/DoubleHashableIteratorT.h">DoubleHashableIteratorT.h</A>
-			<BR><A HREF="source/DoubleHashableIterator.h">DoubleHashableIterator.h</A>
-			<BR><A HREF="source/DoubleHashableIterator.cpp">DoubleHashableIterator.cpp</A>
+			<A HREF="https://github.com/raganwald/OldSource/tree/master/source/DoubleHashableIteratorT.h">DoubleHashableIteratorT.h</A>
+			<BR><A HREF="https://github.com/raganwald/OldSource/tree/master/source/DoubleHashableIterator.h">DoubleHashableIterator.h</A>
+			<BR><A HREF="https://github.com/raganwald/OldSource/tree/master/source/DoubleHashableIterator.cpp">DoubleHashableIterator.cpp</A>
 		</TD>
 		<TD WIDTH=83%>
 			Iterator template for <B>DoubleHashTable</B>. Iterates over
@@ -448,9 +448,9 @@ These are some of the C++ general purpose classes in my 'toolbox'. There's a hea
 	</TR>
 	<TR VALIGN=TOP>
 		<TD WIDTH=17%>
-			<A HREF="source/DoubleHashableAllIteratorT.h">DoubleHashableAllIteratorT.h</A>
-			<BR><A HREF="source/DoubleHashableAllIterator.h">DoubleHashableAllIterator.h</A>
-			<BR><A HREF="source/DoubleHashableAllIterator.cpp">DoubleHashableAllIterator.cpp</A>
+			<A HREF="https://github.com/raganwald/OldSource/tree/master/source/DoubleHashableAllIteratorT.h">DoubleHashableAllIteratorT.h</A>
+			<BR><A HREF="https://github.com/raganwald/OldSource/tree/master/source/DoubleHashableAllIterator.h">DoubleHashableAllIterator.h</A>
+			<BR><A HREF="https://github.com/raganwald/OldSource/tree/master/source/DoubleHashableAllIterator.cpp">DoubleHashableAllIterator.cpp</A>
 		</TD>
 		<TD WIDTH=83%>
 			Iterator template for <B>DoubleHashTable</B>. Iterates over all
@@ -460,9 +460,9 @@ These are some of the C++ general purpose classes in my 'toolbox'. There's a hea
 	</TR>
 	<TR VALIGN=TOP>
 		<TD WIDTH=17%>
-			<A HREF="source/DeallocDoubleHashTableT.h">DeallocDoubleHashTableT.h</A>
-			<BR><A HREF="source/DeallocDoubleHashTable.h">DeallocDoubleHashTable.h</A>
-			<BR><A HREF="source/DeallocDoubleHashTable.cpp">DeallocDoubleHashTable.cpp</A>
+			<A HREF="https://github.com/raganwald/OldSource/tree/master/source/DeallocDoubleHashTableT.h">DeallocDoubleHashTableT.h</A>
+			<BR><A HREF="https://github.com/raganwald/OldSource/tree/master/source/DeallocDoubleHashTable.h">DeallocDoubleHashTable.h</A>
+			<BR><A HREF="https://github.com/raganwald/OldSource/tree/master/source/DeallocDoubleHashTable.cpp">DeallocDoubleHashTable.cpp</A>
 		</TD>
 		<TD WIDTH=83%>
 			Template for DoubleHashTables which use pooled memory
@@ -471,8 +471,8 @@ These are some of the C++ general purpose classes in my 'toolbox'. There's a hea
 	</TR>
 	<TR VALIGN=TOP>
 		<TD WIDTH=17%>
-			<A HREF="source/TaObjectPool.h">TaObjectPool.h</A>
-			<BR><A HREF="source/TaObjectPool.cpp">TaObjectPool.cpp</A>
+			<A HREF="https://github.com/raganwald/OldSource/tree/master/source/TaObjectPool.h">TaObjectPool.h</A>
+			<BR><A HREF="https://github.com/raganwald/OldSource/tree/master/source/TaObjectPool.cpp">TaObjectPool.cpp</A>
 		</TD>
 		<TD WIDTH=83%>
 			Class which pools memory for objects of a certain type. Good
@@ -482,8 +482,8 @@ These are some of the C++ general purpose classes in my 'toolbox'. There's a hea
 	</TR>
 	<TR VALIGN=TOP>
 		<TD WIDTH=17%>
-			<A HREF="source/MemoryBlock.h">MemoryBlock.h</A>
-			<BR><A HREF="source/MemoryBlock.cpp">MemoryBlock.cpp</A>
+			<A HREF="https://github.com/raganwald/OldSource/tree/master/source/MemoryBlock.h">MemoryBlock.h</A>
+			<BR><A HREF="https://github.com/raganwald/OldSource/tree/master/source/MemoryBlock.cpp">MemoryBlock.cpp</A>
 		</TD>
 		<TD WIDTH=83%>
 			<B>TaObjectPool</B> allocates blocks of 32 objects at a time,
@@ -513,7 +513,7 @@ To make it perfectly clear: I wrote the interpreters for both MendelScript and F
 <TABLE WIDTH=100% BORDER=1 CELLPADDING=2 CELLSPACING=2>
 	<TR VALIGN=TOP>
 		<TD>
-			<A HREF="source/DilutedInterpreter.java">DilutedInterpreter.java</A>
+			<A HREF="https://github.com/raganwald/OldSource/tree/master/source/DilutedInterpreter.java">DilutedInterpreter.java</A>
 		</TD>
 		<TD>
 			A sparsely commented excerpt from Firestorm's source. This Java
@@ -524,7 +524,7 @@ To make it perfectly clear: I wrote the interpreters for both MendelScript and F
 	</TR>
 	<TR VALIGN=TOP>
 		<TD>
-			<A HREF="source/AbstractMember.java">AbstractMember.java</A>
+			<A HREF="https://github.com/raganwald/OldSource/tree/master/source/AbstractMember.java">AbstractMember.java</A>
 		</TD>
 		<TD>
 			An interface from NAVajo (Firestorm's predecessor). Glancing
@@ -536,7 +536,7 @@ To make it perfectly clear: I wrote the interpreters for both MendelScript and F
 	</TR>
 	<TR VALIGN=TOP>
 		<TD>
-			<A HREF="source/MemberBuilder.java">MemberBuilder.java</A>
+			<A HREF="https://github.com/raganwald/OldSource/tree/master/source/MemberBuilder.java">MemberBuilder.java</A>
 		</TD>
 		<TD>
 			An implementation of the <B>factory</B> pattern in NAVajo.
@@ -544,12 +544,12 @@ To make it perfectly clear: I wrote the interpreters for both MendelScript and F
 	</TR>
 	<TR VALIGN=TOP>
 		<TD>
-			<A HREF="source/TEnglish.html.txt">TEnglish.html</A>
+			<A HREF="https://github.com/raganwald/OldSource/tree/master/source/TEnglish.html.txt">TEnglish.html</A>
 		</TD>
 		<TD>
 			An early template page for NAVajo, showing the Smalltalk-like
 			syntax. NAVajo renders template files like this into HTML. Compare
-			to <A HREF="source/firescript/navajo-scheme.lisp">navajo-scheme.lisp</A>.
+			to <A HREF="https://github.com/raganwald/OldSource/tree/master/source/firescript/navajo-scheme.lisp">navajo-scheme.lisp</A>.
 		</TD>
 	</TR>
 </TABLE>
@@ -561,7 +561,7 @@ The following examples are Scheme used to test the core Firescript interpreter. 
 <TABLE WIDTH=100% BORDER=1 CELLPADDING=2 CELLSPACING=2>
 	<TR VALIGN=TOP>
 		<TD>
-			<A HREF="source/bad-recursive.lisp">bad-recursive.lisp</A>
+			<A HREF="https://github.com/raganwald/OldSource/tree/master/source/bad-recursive.lisp">bad-recursive.lisp</A>
 		</TD>
 		<TD>
 			A recursive implementation of <B>factorial</B> which is <B>not</B>
@@ -570,7 +570,7 @@ The following examples are Scheme used to test the core Firescript interpreter. 
 	</TR>
 	<TR VALIGN=TOP>
 		<TD>
-			<A HREF="source/factorial.lisp">factorial.lisp</A>
+			<A HREF="https://github.com/raganwald/OldSource/tree/master/source/factorial.lisp">factorial.lisp</A>
 		</TD>
 		<TD>
 			A properly tail recursive implementation of <B>factorial</B>.
@@ -578,7 +578,7 @@ The following examples are Scheme used to test the core Firescript interpreter. 
 	</TR>
 	<TR VALIGN=TOP>
 		<TD>
-			<A HREF="source/no-tail-factorial.lisp">no-tail-factorial.lisp</A>
+			<A HREF="https://github.com/raganwald/OldSource/tree/master/source/no-tail-factorial.lisp">no-tail-factorial.lisp</A>
 		</TD>
 		<TD>
 			An implementation of <B>factorial</B> which is <B>not</B> tail
@@ -587,7 +587,7 @@ The following examples are Scheme used to test the core Firescript interpreter. 
 	</TR>
 	<TR VALIGN=TOP>
 		<TD>
-			<A HREF="source/benchmark.lisp">benchmark.lisp</A>
+			<A HREF="https://github.com/raganwald/OldSource/tree/master/source/benchmark.lisp">benchmark.lisp</A>
 		</TD>
 		<TD>
 			Something which chews up enough cycles to be worth timing.
@@ -595,7 +595,7 @@ The following examples are Scheme used to test the core Firescript interpreter. 
 	</TR>
 	<TR VALIGN=TOP>
 		<TD>
-			<A HREF="source/continuation.lisp">continuation.lisp</A>
+			<A HREF="https://github.com/raganwald/OldSource/tree/master/source/continuation.lisp">continuation.lisp</A>
 		</TD>
 		<TD>
 			A test for <B>call-with-continuation</B>. Enough to convince me
@@ -607,7 +607,7 @@ The following examples are Scheme used to test the core Firescript interpreter. 
 	</TR>
 	<TR VALIGN=TOP>
 		<TD>
-			<A HREF="source/freeze-and-thaw.lisp">freeze-and-thaw.lisp</A>
+			<A HREF="https://github.com/raganwald/OldSource/tree/master/source/freeze-and-thaw.lisp">freeze-and-thaw.lisp</A>
 		</TD>
 		<TD>
 			Demonstrates the power of combining macros with raw lambdas to
@@ -616,7 +616,7 @@ The following examples are Scheme used to test the core Firescript interpreter. 
 	</TR>
 	<TR VALIGN=TOP>
 		<TD>
-			<A HREF="source/hello.lisp">hello.lisp</A>
+			<A HREF="https://github.com/raganwald/OldSource/tree/master/source/hello.lisp">hello.lisp</A>
 		</TD>
 		<TD>
 			Disk space is cheap.
@@ -624,7 +624,7 @@ The following examples are Scheme used to test the core Firescript interpreter. 
 	</TR>
 	<TR VALIGN=TOP>
 		<TD>
-			<A HREF="source/let.lisp">let.lisp</A>
+			<A HREF="https://github.com/raganwald/OldSource/tree/master/source/let.lisp">let.lisp</A>
 		</TD>
 		<TD>
 			Tests the <B>let</B> macro. Especially important, because the
@@ -643,7 +643,7 @@ The following examples are Scheme used to test the core Firescript interpreter. 
 	</TR>
 	<TR VALIGN=TOP>
 		<TD>
-			<A HREF="source/map.lisp">map.lisp</A>
+			<A HREF="https://github.com/raganwald/OldSource/tree/master/source/map.lisp">map.lisp</A>
 		</TD>
 		<TD>
 			Another regression test. <B>map</B> changed from being a built
@@ -652,7 +652,7 @@ The following examples are Scheme used to test the core Firescript interpreter. 
 	</TR>
 	<TR VALIGN=TOP>
 		<TD>
-			<A HREF="source/even.lisp">even.lisp</A>
+			<A HREF="https://github.com/raganwald/OldSource/tree/master/source/even.lisp">even.lisp</A>
 		</TD>
 		<TD>
 			Determines whether an integer is even. Puzzle for people new to
@@ -661,7 +661,7 @@ The following examples are Scheme used to test the core Firescript interpreter. 
 	</TR>
 	<TR VALIGN=TOP>
 		<TD>
-			<A HREF="source/no-tail-even.lisp">no-tail-even.lisp</A>
+			<A HREF="https://github.com/raganwald/OldSource/tree/master/source/no-tail-even.lisp">no-tail-even.lisp</A>
 		</TD>
 		<TD>
 			An implementation of <B>even?</B> which is <B>not</B> tail
@@ -670,7 +670,7 @@ The following examples are Scheme used to test the core Firescript interpreter. 
 	</TR>
 	<TR VALIGN=TOP>
 		<TD>
-			<A HREF="source/stack-inversion-example.lisp">stack-inversion-example.lisp</A>
+			<A HREF="https://github.com/raganwald/OldSource/tree/master/source/stack-inversion-example.lisp">stack-inversion-example.lisp</A>
 		</TD>
 		<TD>
 			Tests the <B>generalized variable</B> facility in Firescript.
@@ -693,8 +693,8 @@ This is part of a small module that demonstrates how to track user preferences. 
 	<COL WIDTH=223*>
 	<TR VALIGN=TOP>
 		<TD WIDTH=13%>
-			<A HREF="source/firescript/sartz.xml">sartz.xml</A>
-			<BR><A HREF="source/firescript/about.dtd.txt">about.dtd</A>
+			<A HREF="https://github.com/raganwald/OldSource/tree/master/source/firescript/sartz.xml">sartz.xml</A>
+			<BR><A HREF="https://github.com/raganwald/OldSource/tree/master/source/firescript/about.dtd.txt">about.dtd</A>
 		</TD>
 		<TD WIDTH=87%>
 			An XML file containing language attributes. This module
@@ -703,7 +703,7 @@ This is part of a small module that demonstrates how to track user preferences. 
 	</TR>
 	<TR VALIGN=TOP>
 		<TD WIDTH=13%>
-			<A HREF="source/firescript/display-preferences.lisp.txt">display-preferences.lisp</A>
+			<A HREF="https://github.com/raganwald/OldSource/tree/master/source/firescript/display-preferences.lisp.txt">display-preferences.lisp</A>
 		</TD>
 		<TD WIDTH=87%>
 			This displays a preferences page for the user. Notable features
@@ -714,7 +714,7 @@ This is part of a small module that demonstrates how to track user preferences. 
 	</TR>
 	<TR VALIGN=TOP>
 		<TD WIDTH=13%>
-			<A HREF="source/firescript/sartz.lisp">sartz.lisp</A>
+			<A HREF="https://github.com/raganwald/OldSource/tree/master/source/firescript/sartz.lisp">sartz.lisp</A>
 		</TD>
 		<TD WIDTH=87%>
 			The Firescript page which handles the display of <B>sartz.xml</B>.
@@ -725,7 +725,7 @@ This is part of a small module that demonstrates how to track user preferences. 
 	</TR>
 	<TR VALIGN=TOP>
 		<TD WIDTH=13%>
-			<A HREF="source/firescript/validate-preferences.lisp">validate-preferences.lisp</A>
+			<A HREF="https://github.com/raganwald/OldSource/tree/master/source/firescript/validate-preferences.lisp">validate-preferences.lisp</A>
 		</TD>
 		<TD WIDTH=87%>
 			A helper function encapsulated in a separate file. Shows that
@@ -743,16 +743,16 @@ The NAVajo system was a predecessor to Firestorm. I reimplemented the applicatio
 	<COL WIDTH=200*>
 	<TR VALIGN=TOP>
 		<TD WIDTH=22%>
-			<A HREF="source/firescript/navajo-scheme.lisp">navajo-scheme.lisp</A>
+			<A HREF="https://github.com/raganwald/OldSource/tree/master/source/firescript/navajo-scheme.lisp">navajo-scheme.lisp</A>
 		</TD>
 		<TD WIDTH=78%>
 			An implementation of NAVajo using Firescript. Compare to
-			<A HREF="source/TEnglish.html.txt">TEnglish.html</A>.
+			<A HREF="https://github.com/raganwald/OldSource/tree/master/source/TEnglish.html.txt">TEnglish.html</A>.
 		</TD>
 	</TR>
 	<TR VALIGN=TOP>
 		<TD WIDTH=22%>
-			<A HREF="source/firescript/navajo-indexed.lisp">navajo-indexed.lisp</A>
+			<A HREF="https://github.com/raganwald/OldSource/tree/master/source/firescript/navajo-indexed.lisp">navajo-indexed.lisp</A>
 		</TD>
 		<TD WIDTH=78%>
 			An alternate implementation which uses indexed collections for
@@ -761,7 +761,7 @@ The NAVajo system was a predecessor to Firestorm. I reimplemented the applicatio
 	</TR>
 	<TR VALIGN=TOP>
 		<TD WIDTH=22%>
-			<A HREF="source/firescript/navajo-dictionaries.lisp">navajo-dictionaries.lisp</A>
+			<A HREF="https://github.com/raganwald/OldSource/tree/master/source/firescript/navajo-dictionaries.lisp">navajo-dictionaries.lisp</A>
 		</TD>
 		<TD WIDTH=78%>
 			Yet another alternate implementation, this one using
@@ -779,7 +779,7 @@ This is part of a small module that demonstrates how to display collections of t
 	<COL WIDTH=242*>
 	<TR VALIGN=TOP>
 		<TD WIDTH=5%>
-			<A HREF="source/firescript/List.lisp">List.lisp</A>
+			<A HREF="https://github.com/raganwald/OldSource/tree/master/source/firescript/List.lisp">List.lisp</A>
 		</TD>
 		<TD WIDTH=95%>
 			The file which completely describes the list of images. Note
@@ -792,7 +792,7 @@ This is part of a small module that demonstrates how to display collections of t
 	</TR>
 	<TR VALIGN=TOP>
 		<TD WIDTH=5%>
-			<A HREF="source/firescript/detail.lisp">detail.lisp</A>
+			<A HREF="https://github.com/raganwald/OldSource/tree/master/source/firescript/detail.lisp">detail.lisp</A>
 		</TD>
 		<TD WIDTH=95%>
 			This displays a single photo in a simple page.
@@ -807,7 +807,7 @@ The only SmallTalk I can lay my hands on is an implementation of Streamized Prog
 <TABLE WIDTH=100% BORDER=1 CELLPADDING=2 CELLSPACING=2>
 	<TR VALIGN=TOP>
 		<TD>
-			<A HREF="source/VSTRM.CLS">VSTRM.CLS</A>
+			<A HREF="https://github.com/raganwald/OldSource/tree/master/source/VSTRM.CLS">VSTRM.CLS</A>
 		</TD>
 		<TD>
 			A class which implements <B>streamized programming</B>, which
