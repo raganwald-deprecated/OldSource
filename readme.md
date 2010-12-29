@@ -202,10 +202,10 @@ I experimented with the Ruby programming language. While it doesn&#146;t have th
 			infinitely large collections.<BR>There&#146;s a full explanation
 			of <A HREF="http://raganwald.com/tips/denumerables.html">Denumerables
 			in Ruby</A> <A HREF="http://raganwald.com/tips/denumerables.html"></A>
-			<IMG SRC="http://www.braithwaite-lee.com/image/bullet/text.gif" NAME="Graphic65" ALIGN=BOTTOM WIDTH=9 HEIGHT=11 BORDER=0><A HREF="http://raganwald.com/tips/denumerables.html"></A>
+			<A HREF="http://raganwald.com/tips/denumerables.html"></A>
 			on this site, plus an essay on <A HREF="http://raganwald.com/tips/closures.html"><SPAN STYLE="font-weight: medium">Closures
 			in Ruby</A> <A HREF="http://raganwald.com/tips/closures.html"></A>
-			<IMG SRC="http://www.braithwaite-lee.com/image/bullet/text.gif" NAME="Graphic1" ALIGN=BOTTOM WIDTH=9 HEIGHT=11 BORDER=0><A HREF="http://raganwald.com/tips/closures.html"></SPAN></A><SPAN STYLE="font-weight: medium">.</SPAN>
+			<A HREF="http://raganwald.com/tips/closures.html"></SPAN></A><SPAN STYLE="font-weight: medium">.</SPAN>
 		</TD>
 	</TR>
 </TABLE>
@@ -513,7 +513,7 @@ To make it perfectly clear: I wrote the interpreters for both MendelScript and F
 <TABLE WIDTH=100% BORDER=1 CELLPADDING=2 CELLSPACING=2>
 	<TR VALIGN=TOP>
 		<TD>
-			<A HREF="http://www.braithwaite-lee.com/opportunities/firestorm/DilutedInterpreter.java">DilutedInterpreter.java</A>
+			<A HREF="source/DilutedInterpreter.java">DilutedInterpreter.java</A>
 		</TD>
 		<TD>
 			A sparsely commented excerpt from Firestorm's source. This Java
