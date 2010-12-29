@@ -200,12 +200,12 @@ I experimented with the Ruby programming language. While it doesn&#146;t have th
 		<TD WIDTH=91%>
 			A module for call-by-need collections. Useful for modelling
 			infinitely large collections.<BR>There&#146;s a full explanation
-			of <A HREF="http://www.braithwaite-lee.com/tips/denumerables.html">Denumerables
-			in Ruby</A> <A HREF="http://www.braithwaite-lee.com/tips/denumerables.html"></A>
-			<IMG SRC="http://www.braithwaite-lee.com/image/bullet/text.gif" NAME="Graphic65" ALIGN=BOTTOM WIDTH=9 HEIGHT=11 BORDER=0><A HREF="http://www.braithwaite-lee.com/tips/denumerables.html"></A>
-			on this site, plus an essay on <A HREF="http://www.braithwaite-lee.com/tips/closures.html"><SPAN STYLE="font-weight: medium">Closures
-			in Ruby</A> <A HREF="http://www.braithwaite-lee.com/tips/closures.html"></A>
-			<IMG SRC="http://www.braithwaite-lee.com/image/bullet/text.gif" NAME="Graphic1" ALIGN=BOTTOM WIDTH=9 HEIGHT=11 BORDER=0><A HREF="http://www.braithwaite-lee.com/tips/closures.html"></SPAN></A><SPAN STYLE="font-weight: medium">.</SPAN>
+			of <A HREF="http://raganwald.com/tips/denumerables.html">Denumerables
+			in Ruby</A> <A HREF="http://raganwald.com/tips/denumerables.html"></A>
+			<IMG SRC="http://www.braithwaite-lee.com/image/bullet/text.gif" NAME="Graphic65" ALIGN=BOTTOM WIDTH=9 HEIGHT=11 BORDER=0><A HREF="http://raganwald.com/tips/denumerables.html"></A>
+			on this site, plus an essay on <A HREF="http://raganwald.com/tips/closures.html"><SPAN STYLE="font-weight: medium">Closures
+			in Ruby</A> <A HREF="http://raganwald.com/tips/closures.html"></A>
+			<IMG SRC="http://www.braithwaite-lee.com/image/bullet/text.gif" NAME="Graphic1" ALIGN=BOTTOM WIDTH=9 HEIGHT=11 BORDER=0><A HREF="http://raganwald.com/tips/closures.html"></SPAN></A><SPAN STYLE="font-weight: medium">.</SPAN>
 		</TD>
 	</TR>
 </TABLE>
@@ -492,7 +492,7 @@ These are some of the C++ general purpose classes in my 'toolbox'. There's a hea
 	</TR>
 	<TR VALIGN=TOP>
 		<TD WIDTH=17%>
-			<A HREF="http://www.braithwaite-lee.com/tips/fooT.html"><SPAN STYLE="font-weight: medium">FooT.h</SPAN></A>
+			<A HREF="http://raganwald.com/tips/fooT.html"><SPAN STYLE="font-weight: medium">FooT.h</SPAN></A>
 		</TD>
 		<TD WIDTH=83%>
 			</A>Mildly obfuscated source code for a C++
